@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Q5"
+    android:gravity="center"
+    android:background="@color/cardview_dark_background">
+
+    <TextView
+        android:id="@+id/tvusr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Username"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/txtusr"
+        android:layout_margin="20dp"
+        />
+    <EditText
+        android:id="@+id/txtusr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:textSize="25sp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tvusr"/>
+
+    <TextView
+        android:id="@+id/tvpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Password"
+        android:textSize="25sp"
+        android:layout_margin="20dp"
+        android:layout_alignBaseline="@+id/txtpw"
+        android:layout_below="@+id/tvusr"/>
+    <EditText
+        android:id="@+id/txtpw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:layout_marginLeft="5dp"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/tvpw"
+        android:layout_below="@+id/txtusr"/>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/txtpw"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/black"/>
+
+</RelativeLayout>
